@@ -32,4 +32,4 @@ class LocalStoreUtil {
   }
 }
 
-const LocalStorageUtil = new LocalStoreUtil();
+const localStorageUtil = new LocalStoreUtil();
