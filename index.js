@@ -20,4 +20,6 @@ fetch("server/catalog.json") // can add url json
   })
   .catch((e) => {
     console.log(e);
+    spinnerPage.handlerClear();
+    errorPage.render();
   });
