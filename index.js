@@ -5,13 +5,18 @@ function render() {
   productsPage.render();
 }
 
+spinnerPage.render();
 let CATALOG = [];
 
 fetch("server/catalog.json") // can add url json
   .then((res) => res.json())
   .then((body) => {
     CATALOG = body;
-    render();
+
+    setTimeout(() => {
+      spinnerPage.handlerClear();
+      render();
+    }, 2000);
   })
   .catch((e) => {
     console.log(e);
