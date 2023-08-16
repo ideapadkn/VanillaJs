@@ -15,5 +15,5 @@ class Header {
     ROOT_HEADER.innerHTML = html;
   }
 }
-
+ 
 const headerPage = new Header();

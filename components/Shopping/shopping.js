@@ -19,7 +19,7 @@ class Shopping {
         sumCatalog += price;
       }
     });
-
+ 
     const html = `
       <div class="shopping-container">
         <div class="shopping__close" onclick="shoppingPage.handlerClear();"></div>

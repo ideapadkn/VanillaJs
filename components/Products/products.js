@@ -33,7 +33,7 @@ class Products {
         activeText = this.labelRemove;
       }
 
-      htmlCatalog += `
+      htmlCatalog += ` 
         <li class="products-element">
           <span class="products-element__name">${name}</span>
           <img class="products-element__img" src="${img}" />

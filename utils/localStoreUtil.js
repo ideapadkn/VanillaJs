@@ -31,5 +31,5 @@ class LocalStoreUtil {
     };
   }
 }
-
+ 
 const localStorageUtil = new LocalStoreUtil();
