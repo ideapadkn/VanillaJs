@@ -12,7 +12,7 @@ class Shopping {
       if (productsStore.indexOf(id) !== -1) {
         htmlCatalog += `
           <tr>
-            <td class="shopping-element__name">${name}</td>
+            <td class="shopping-element__name">⚡️ ${name}</td>
             <td class="shopping-element__price">${price.toLocaleString()} USD</td>
           </tr>
         `;
@@ -22,11 +22,9 @@ class Shopping {
 
     const html = `
       <div class="shopping-container">
-        <div class="shopping__close" onclick="shoppingPage.handlerClear()">
-          x
-        </div
-        <table>
-          ${htmlCatalog}
+        <div class="shopping__close" onclick="shoppingPage.handlerClear();"></div>
+          <table>
+            ${htmlCatalog}
           <tr>
             <td class="shopping-element__name">Sum:</td>
             <td class="shopping-element__price">${sumCatalog.toLocaleString()} USD</td>
@@ -34,6 +32,7 @@ class Shopping {
         </table>
       </div>
     `;
+
     ROOT_SHOPPING.innerHTML = html;
   }
 }
